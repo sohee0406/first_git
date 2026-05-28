@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: red ;
+        }
+
+        span{
+            color: green;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    </style>
+
+    <script>
+
+        // 문제
+        // const user = {
+        //     username : 'js',
+        //     password : '123'
+        // }
+
+        // =>위 객체 사용
+        // =>prompt활용 유저에게 아이디 패스워드 입력받기
+        // =>입력란은 내용과 객체에 지정된 내용비교하여 
+        // 아이디가 틀리면 아이디가 틀렸습니다
+        // 패스워드가 틀리면 패스워드가 틀렸습니다
+        // 아이디 패스워드가 맞으면
+        // 00님 로그인 되었습니다로 출력
+        // 00님 은 로그인한 유저의 아이디명
+
+        const userid = prompt('아이디를 입력하세요');
+        const userpw = prompt('패스워드를 입력하세요');
+
+        const user = {
+            username : 'js',
+            password : '123',
+        }
+        
+        
+
+        if(userid !== user.username){
+            document.write('<h2>아이디가 틀렸습니다</h2>')
+        }else if(userpw !== user.password){
+            document.write('<h2>패스워드가 틀렸습니다</h2>')
+        }else if(userid === user.username && userpw === user.password){
+            document.write(`<span>${userid}님 환영합니다</span>`)
+        }else{
+            document.write('<h2>알수 없는 에러가 발생했습니다 다시 로그인 해주세요</h2>')
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

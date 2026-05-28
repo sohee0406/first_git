@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 프로그램</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+      font-family: sans-serif;
+    }
+
+    .login_box{
+      width: 350px;
+      padding: 45px;
+      background-color: white;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    h1{
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p{
+      color: gray;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="login_box">
+
+    <h1>LOGIN</h1>
+
+    <p>로그인 프로그램</p>
+
+  </div>
+
+  <script>
+
+    let id = "전소희";
+    let pw = "1234";
+
+    for(let i = 1; i <= 3; i++){
+
+      let userId = prompt("아이디를 입력하세요");
+      let userPw = prompt("비밀번호를 입력하세요");
+
+      if(userId == id && userPw == pw){
+        alert("접속 완료!");
+        break;
+        document.write()
+      }
+
+      else if(i == 3){
+        alert("접근할 수 없습니다.");
+      }
+
+      else{
+        alert("아이디 또는 비밀번호가 틀렸습니다.");
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // *객체(Object)
+        // =>배열과 비슷하게 여러 속성을 저장할 수 있지만,
+        // 객체는 조금 더섬세한 값을 저장 할 수 있음
+        // =>{} 중괄호 사용
+        // =>속성(property): 값(Value) 으로 구분
+        // =>객체 안의 함수를 메서드라고 함
+
+        // *접근 연산자(점 표기법)
+        // =>객체내부에 속성을 접근할때 사용
+        
+        // *this
+        // =>객체 내부에 객체명을 한번 더 선택할때 사용
+
+        const obj = {
+            name: 'js' ,
+            week: 'wen',
+            day: 27,
+            age: 16,
+            intro: function(){
+                console.log(`이름: ${this.name}, 나이: ${this.age}`)
+            }
+        };
+
+        obj.intro();
+
+        // obj.day
+        // 접근연산자 사용법 점 찍으면 뒤에 속성값 뜸
+        // console.log(obj.day)
+
+        // console.log(obj.day + obj.age)
+
+        // console.log(`이름: ${obj.name}`)
+        // console.log(`요일: ${obj.week}`)
+        // console.log(`날짜: ${obj.day}`)
+        // console.log(`나이: ${obj.age}`)
+
+        
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

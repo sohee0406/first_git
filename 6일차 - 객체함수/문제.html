@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // *문제
+        // 1. 객체 하나 제작
+        // 2. 객체의 주제는 유저 정보를 저장하는 객체
+        // 3. 속성에 맞게 속성값 지정
+        
+        // 출력결과
+        // ### 유저 정보 ###
+        // 유저 아이디:
+        // 이메일:
+        // 프로필 이미지: 
+
+        // =>write 사용할것
+        // =>h2태그 사용할것
+
+        // const obj = {
+        //     userid: 'JavaScript' ,
+        //     email: 'js@JavaScript.com',
+        //     profile: 'js.jpg',
+        //     intro: function(){
+        //         document.write(`<h2>
+        //             ###유저정보###<br>
+        //             유저 아이디: ${this.userid}<br>
+        //             이메일: ${this.email}<br>  
+        //             프로필 이미지: ${this.profile}</h2>`)
+        //     }
+        // };
+
+        // obj.intro();
+
+        // ----------------------------------------------------- 내가만든거
+
+
+        // const userInfo = 카멜 케이스
+        // const user_info = 스네이크 케이스
+
+        // const userInfo = {
+        //     id: 0,
+        //     username: 'Javascript',
+        //     email: 'js@JavaScript.com',
+        //     profileImg: 'js.jpg',
+        // };
+
+        // document.write('<h2>###유저정보###</h2>')
+        // document.write(`<h2> 유저 아이디: ${userInfo.username}</h2>`)
+        // document.write(`<h2> 이메일: ${userInfo.email}</h2>`)
+        // document.write(`<h2> 프로필 이미지: ${userInfo.profileImg}</h2>`)
+
+        // ------------------------------------------------------ 쌤이 만든거 
+
+        // *문제2
+        // =>prompt를 이용하여 자기소개 출력
+        // =>객체 메서드 this 활용
+
+        // 출력결과
+        // 이름: 
+        // 좋아하는 언어: 
+        // 취미: 
+
+        const name = prompt('이름을 입력하세요');
+        const lang = prompt('좋아하는 언어를 입력하세요');
+        const hobby = prompt('취미를 입력하세요');
+
+        const userInfo = {
+            username: name,
+            userlang: lang,
+            userhobby: hobby,
+            intro: function(){
+                document.write(`<h2>
+                    이름: ${this.username}<br>
+                    좋아하는 언어: ${this.userlang}<br>
+                    취미: ${this.userhobby}
+                </h2>`)
+            }
+        };
+
+        userInfo.intro();
+
+        
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

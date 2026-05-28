@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        
+    </style>
+
+    <script>
+
+        const user = [
+            {
+                id:0,
+                username:`user1`,
+                email:"jgs@naever.com",
+                profilImg: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OrtM7FfDgFfgOmRqL4R__bU5cjx1ltwy1A&s`
+            },
+            {
+                id:1,
+                username:`user2`,
+                email:"js@naever.com",
+                profilImg: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OrtM7FfDgFfgOmRqL4R__bU5cjx1ltwy1A&s`
+            },
+            {
+                id:2,
+                username:`user3`,
+                email:"jss@naever.com",
+                profilImg: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OrtM7FfDgFfgOmRqL4R__bU5cjx1ltwy1A&s`
+            },
+            {
+                id:3,
+                username:`user4`,
+                email:"jds@naever.com",
+                profilImg: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OrtM7FfDgFfgOmRqL4R__bU5cjx1ltwy1A&s`
+            }
+        ]
+        
+
+        for(let i = 0; i < user.length; i++){
+            document.write(
+            `<div class="card">
+                <h2>${user[i].id}번째 유저</h2>
+                <h2>아이디: ${user[i].username}</h2>
+                <p>email:${user[i].email}</p>
+                <img src="${user[i].profilImg}">
+            </div>`)
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // document.write('5단 <')
+        // for(let i = 1; i <= 9; i ++){
+        //     document.write('5x' + i + '=' + (5 * i ) + '<br>')
+        // }
+
+        // const input = Number(prompt("숫자를 입력해 주세요"));
+        // for(let i = 1; i <= 9; i ++){
+        //     document.write(input + 'X' + i + '=' + (input * i ) + '<br>');
+        // }
+
+        const input = Number(prompt("숫자를 입력해 주세요"));
+
+        if(input % 2 === 0){
+            for(let i = 2; i <= 9; i +=2){
+            document.write(input + 'X' + i + '=' +(input * i) + '<br>' )
+        }} else if(input % 2 === 1){
+            for(let i = 1; i <= 9; i +=2){
+            document.write(input + 'X' + i + '=' +(input * i) + '<br>' )}
+        } else{
+            document.write('숫자를 입력해주세요');
+        }
+
+        const a =10;
+        document.write('a의 값은? ' + a)
+        document.write(`일단 문자입니다 그런데 ${a} 만약 변수를 사용하려면?`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

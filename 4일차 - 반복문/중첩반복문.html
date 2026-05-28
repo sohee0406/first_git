@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+
+    </style>
+
+    <script>
+
+        // *중첩 반복문
+        // =>반복문 안의 반복문
+        // =>부모가 한번 출력될때 자식 반복문은 전체를 순회함
+
+        // for(let i = 1; i < 4; i ++){
+        //     document.write('<h4>'+ i + '</h4>')
+
+        //     for(let e = 4 ; e < 7; e ++ ){
+        //         document.write(e);
+        //     }
+        // }
+
+        // *문제
+        // => 1~8단 까지 모든 구구단 출력
+        // 출력 결과
+        
+        for(let i = 1; i < 10; i ++){
+            document.write('<h4>' + i + '단 </h4>')
+
+            for(let e = 1; e < 10; e++){
+                document.write(i + 'X' + e + '=' + (e * i ) + '<br>')
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
